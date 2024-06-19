@@ -43,8 +43,8 @@
                 position: "center",
                 icon: "success",
                 title: "<?= session('success') ?>",
-                showConfirmButton: false,
-                timer: 1500
+                showConfirmButton: true,
+                
             });
         });
     </script>

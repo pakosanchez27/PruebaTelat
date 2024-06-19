@@ -88,7 +88,7 @@
         </div>
         <div class="col-md-6">
             <label for="numero" class="form-label">Número Exterior:</label>
-            <input type="text" class="form-control" id="numero" name="numero" value="<?= esc($direccion['numero_exterior'] ?? '') ?>">
+            <input type="text" class="form-control" id="numero" name="numero" value="<?= esc($direccion['numero_ext'] ?? '') ?>">
             <?php if (validation_errors('numero')) :?>
             <div class="text-danger text-left mt-3"><?= esc(validation_show_error('numero')) ?></div>
             <?php endif; ?>
@@ -103,8 +103,8 @@
             <?php endif; ?>
         </div>
         <div class="col-md-6">
-            <label for="ciudad" class="form-label">Delegación:</label>
-            <input type="text" class="form-control" id="ciudad" name="ciudad" value="<?= esc($direccion['delegacion'] ?? '') ?>">
+            <label for="ciudad" class="form-label">Delegación o Municipio:</label>
+            <input type="text" class="form-control" id="ciudad" name="ciudad" value="<?= $direccion['ciudad'] ?>">
             <?php if (validation_errors('ciudad')) :?>
             <div class="text-danger text-left mt-3"><?= esc(validation_show_error('ciudad')) ?></div>
             <?php endif; ?>
@@ -120,7 +120,7 @@
         </div>
         <div class="col-md-6">
             <label for="codigo_postal" class="form-label">Código Postal:</label>
-            <input type="text" class="form-control" id="codigo_postal" name="codigo_postal" value="<?= esc($direccion['codigo_postal'] ?? '') ?>">
+            <input type="text" class="form-control" id="codigoPostal" name="codigo_postal" value="<?= esc($direccion['codigo_postal'] ?? '') ?>">
             <?php if (validation_errors('codigo_postal')) :?>
             <div class="text-danger text-left mt-3"><?= esc(validation_show_error('codigo_postal')) ?></div>
             <?php endif; ?>
@@ -136,4 +136,5 @@
 
 </main>
 
+<script src="../../../assets/js/api.js"></script>
 <?php echo $this->endSection();

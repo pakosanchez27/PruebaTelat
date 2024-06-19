@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
          // fetch a la api 
-    const apiUrl = `https://api.copomex.com/query/${metodo}/${busqueda}?=${variable}&token=${token} `;
+    const apiUrl = `https://api.copomex.com/query/${metodo}/${busqueda}?=${variable}&token=pruebas `;
     
     fetch(apiUrl)
        .then(response => response.json())

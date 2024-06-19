@@ -168,6 +168,6 @@ class Home extends BaseController
             'updated_at' => date('Y-m-d H:i:s')
         ]);
 
-        return redirect()->to('/')->with('success', 'Usuario registrado correctamente');
+        return redirect()->to('/')->with('success', 'Usuario registrado correctamente, la contraseña temporal es: '. $clave);
     }
 }

@@ -104,7 +104,7 @@
                     <?php endif; ?>
                 </div>
                 <div class="col-md-6">
-                    <label for="ciudad" class="form-label">Delegación:</label>
+                    <label for="ciudad" class="form-label">Delegación o Municipio:</label>
                     <input type="text" class="form-control" id="ciudad" name="ciudad" value="<?= set_value('ciudad') ?>">
                     <?php if (validation_errors('ciudad')) :?>
                     <div class="text-danger text-left mt-3"><?php echo validation_show_error('ciudad') ?></div>
